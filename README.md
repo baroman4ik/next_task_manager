@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Приложение для управления задачами
+
+Это тестовое задание для разработчика, реализованное с использованием Next.js, Redux Toolkit и Tailwind CSS.
+
+## Технологии
+
+- Next.js 14+ (с App Router)
+- Redux Toolkit (для управления состоянием)
+- Tailwind CSS (для стилизации)
+- Внутренний API сервер Next.js (для обработки данных)
 
 ## Getting Started
 
@@ -14,23 +23,14 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Тестовые учетные данные
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Для входа в приложение используйте следующие учетные данные:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Email:** `test@example.com`
+- **Пароль:** `password123`
 
-## Learn More
+Или:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email:** `user@example.com`
+- **Пароль:** `password`
