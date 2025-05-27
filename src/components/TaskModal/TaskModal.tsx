@@ -82,7 +82,9 @@ export function TaskModal({
 
     if (task && task.status === 'failed') {
       if (selectedDueDate.getTime() > Date.now()) {
-        newStatus = 'pending';
+        if (taskFormData.status === 'failed') {
+          newStatus = 'pending';
+        }
       } else {
         newStatus = 'failed';
       }
@@ -126,16 +128,18 @@ export function TaskModal({
             task={task}
             onDelete={onDelete}
             onStatusChange={onStatusChange}
-            onSwitchToEdit={onSwitchToEdit}/>
+            onSwitchToEdit={onSwitchToEdit}
+          />
         }
-
         {(isCreating || isEditing) &&
-          <TaskForm taskFormData={taskFormData}
-                    handleTaskFormChange={handleTaskFormChange}
-                    handleSave={handleSave}
-                    formError={formError}
-                    onCloseAction={onCloseAction}
-                    isEditing={isEditing}/>
+          <TaskForm
+            taskFormData={taskFormData}
+            handleTaskFormChange={handleTaskFormChange}
+            handleSave={handleSave}
+            formError={formError}
+            onCloseAction={onCloseAction}
+            isEditing={isEditing}
+          />
         }
 
       </div>

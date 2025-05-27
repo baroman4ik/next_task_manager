@@ -1,6 +1,6 @@
 'use client';
 
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {useParams, useRouter} from 'next/navigation';
 import {AppDispatch, RootState} from '@/store';
@@ -116,7 +116,7 @@ export default function TaskListPageDetails() {
       }
     }
   };
-  
+
   const handleStatusChange = (taskId: string, status: Task['status']) => {
     dispatch(updateTaskStatus({taskId, status}));
     if (isModalOpen && modalMode === 'view' && selectedTask?.id === taskId) {
